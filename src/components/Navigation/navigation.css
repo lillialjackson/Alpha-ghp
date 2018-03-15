@@ -1,0 +1,11 @@
+.authenticate {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+.authenticate div p {
+  padding-right: 10px;
+}
+.authenticate:hover {
+  cursor: pointer;
+}
