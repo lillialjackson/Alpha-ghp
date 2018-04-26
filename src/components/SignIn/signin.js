@@ -55,7 +55,7 @@ class SignIn extends React.Component {
       <div>
           <div className = 'form signInModal'>
             <p> Sign In </p>
-            <p> To preview Alpha, sign in with email: Guest@email.com and password: Test! *hint! Try searching for climbers located in Bikini Bottom* </p>
+            <p> To preview Alpha, login using email: Guest@email.com and password: Test! *hint! Try searching climbers located in Bikini Bottom* </p>
               <div>
                   <label htmlFor="email"> Email: </label>
                   <input type="email" name="email" id = 'email'
