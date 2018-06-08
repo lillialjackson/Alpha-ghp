@@ -67,53 +67,78 @@ class Register extends React.Component {
     // begin registration form
       <div className = 'form'>
 
-        <h1> Setup Your Profile! </h1>
+        <h4> Setup Your Profile! </h4>
 
           <div className = 'basicinfo'>
               <div> <br />
-                <label htmlFor="username"> Username: </label>
-                <input
-                  type="text"
-                  name="username"
-                  id="username"
-                  onChange = {this.onUsernameChange}
-                  required
-                  />
+                  <div className='registerLabel'>
+                    <label htmlFor="username"> Username: </label>
+                  </div>
+                  <div className= 'inputField'>
+                    <input
+                      type="text"
+                      name="username"
+                      id="username"
+                      onChange = {this.onUsernameChange}
+                      required
+                      />
+                    </div>
                   <br />
-                  <label htmlFor="email"> Email: </label>
-                  <input type="email"
-                    name="email"
-                    onChange = {this.onEmailChange}
-                    required /><br />
-                  <label htmlFor="password">Password: </label>
-                  <input type="password"
-                     name="psw"
-                     id = 'password'
-                     onChange = {this.onPasswordChange}
-                     required /> <br />
+                  <div className='registerLabel'>
+                    <label htmlFor="email"> Email: </label>
+                  </div>
+                  <div className= 'inputField'>
+                    <input type="email"
+                      name="email"
+                      onChange = {this.onEmailChange}
+                      required />
+                  </div>
+                    <br />
+                  <div className='registerLabel'>
+                    <label htmlFor="password">Password: </label>
+                  </div>
+                  <div className= 'inputField'>
+                    <input type="password"
+                       name="psw"
+                       id = 'password'
+                       onChange = {this.onPasswordChange}
+                       required />
+                     </div>
+                       <br />
                </div>
               <div>
-                <label htmlFor="location">Location: </label>
-                <input
-                  type="text"
-                  name="location"
-                  id="location"
-                  onChange = {this.onLocationChange}
-                  placeholder = 'city'
-                  />
-              </div> <br />
+                <div className='registerLabel'>
+                  <label htmlFor="location">Location: </label>
+                </div>
+                <div className= 'inputField'>
+                  <input
+                    type="text"
+                    name="location"
+                    id="location"
+                    onChange = {this.onLocationChange}
+                    placeholder = 'city'
+                    />
+                  </div>
+              </div>
+               <br />
 
 
               <div>
-                <label htmlFor="experience"> Experience Level: </label>
-                <select onChange = {this.onExperienceLevelChange}>
-                  <option value="none">--</option>
-                  <option value="beginner">Beginner</option>
-                  <option value="intermediate">Intermediate</option>
-                  <option value="advanced">Advanced</option>
-                  <option value="elite">Elite</option>
-                </select>
-              </div><br />
+                <div className='registerLabel'>
+                  <label htmlFor="experience"> Experience Level: </label>
+                </div>
+                <div className= 'inputField'>
+                  <select onChange = {this.onExperienceLevelChange}>
+                    <option value="none">--</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                    <option value="elite">Elite</option>
+                  </select>
+                </div>
+
+              </div>
+              <br />
 
               <button onClick ={this.onSubmitSignIn} className= 'button'> Submit </button>
 

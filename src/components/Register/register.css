@@ -2,10 +2,9 @@
   background: #ffffff;
   display: block;
   text-align: left;
-  margin: 10%;
-  padding: 20px;
-  border-radius: 25px;
-  box-shadow: inset 0px 0px 12px 3px #ac3f1f;
+  margin: 2%;
+  padding: 5%;
+  /* box-shadow:  0px 0px 12px 3px #ac3f1f; */
   color: #222222;
 
 }
@@ -14,21 +13,45 @@ h1, h2 {
   text-align: center;
 }
 
-.button {
-  margin: 10px;
-  width: 30%;
-  height: 3em;
+.inputField{
+  padding-left: 2%;
+}
 
+.button {
+  margin: 5%;
+  width: 90%;
+  height: 3em;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, .2);
   background-color: #000000;
   color: #FFFFFF;
   font-size: 1em;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 25px;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .2);
 
 }
 .button:hover {
   background-color: #2b2b2b;
   color: #efdbd6;
+}
+@media only screen and (min-width: 700px) {
+.form {
+  margin: 10px;
+  padding: 25px;
+
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.button {
+  margin: 0 auto;
+  width: 25%;
+  height: 3em;
+
+}
+.button:hover {
+  background-color: #2b2b2b;
+  color: #efdbd6;
+}
 }
