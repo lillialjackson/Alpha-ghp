@@ -7,9 +7,9 @@ const Home = ({ username, location, experienceLevel }) => {
   return (
 
         <div className='form'>
-          <h3> Climb, Explore, Connect! </h3>
+          <h4> Climb, Explore, Connect! </h4>
           <span className='homecontainer introcontainer'>
-            <p className='hometext'> This is Alpha for Beta! Make connections in the climbing community! Chat with climbers in your area, connect with friends, and find new partners!</p>
+            <p className='hometext'> This is Alpha for Beta! Make connections in the climbing community! Connect with friends, and find new partners!</p>
           </span>
           <span className='homecontainer profilecontainer'>
             <p className='hometext'>

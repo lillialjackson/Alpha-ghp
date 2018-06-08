@@ -1,19 +1,5 @@
-.hometext {
-  color: #222222;
-}
-.homecontainer{
-  width: 30%;
-  display: inline-flex;
-  flex-direction: row;
+.hometext{
   text-align: center;
-  margin: 3%;
-}
-h3{
-  width: 15%;
-  display: inline-flex;
-  justify-content: space-around;
-  line-height: 3em;
-  margin: 5%;
 }
 h5, h6 {
   text-align: center;

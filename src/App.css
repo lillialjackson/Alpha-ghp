@@ -1,5 +1,7 @@
 .App {
-  color: #ffffff;
+  background-color: #ffffff;
+  margin: 2%;
+  color: #000000;
   text-align: center;
 }
 .App-header {
@@ -9,4 +11,22 @@
   font-size: 1.75em;
   font-family: cursive;
   color: #ac3f1f;
+
+}
+
+@media only screen and (min-width: 700px) {
+.App {
+  background-color: #ffffff;
+  margin: 15px;
+  color: #000000;
+  text-align: center;
+}
+.App-header {
+
+}
+.alpha {
+  font-size: 1.75em;
+  font-family: cursive;
+  color: #ac3f1f;
+}
 }

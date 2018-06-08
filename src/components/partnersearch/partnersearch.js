@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactTable from 'react-table';
+import "react-table/react-table.css";
 
 
 class PartnerSearch extends React.Component {
@@ -74,22 +75,32 @@ class PartnerSearch extends React.Component {
   return (
     <div>
         <div className = 'form'>
-            <h1> Find a Partner! </h1>
+            <h4> Find a Partner! </h4>
               <div id = 'search'>
-                <label htmlFor="location"> Location: </label>
-                <input type="text"
-                   name="location"
-                  onChange= {this.onLocationChange}
-                  required /><br />
-                <label htmlFor="experience"> Experience Level: </label>
-                <select
-                  onChange = {this.onExperienceLevelChange}>
-                  <option value="none">--</option>
-                  <option value="beginner">Beginner</option>
-                  <option value="intermediate">Intermediate</option>
-                  <option value="advanced">Advanced</option>
-                  <option value="elite">Elite</option>
-                </select> <br />
+                <div className='registerLabel'>
+                  <label htmlFor="location"> Location: </label>
+                </div>
+                <div className= 'inputField'>
+                  <input type="text"
+                     name="location"
+                    onChange= {this.onLocationChange}
+                    required />
+                </div>
+                  <br />
+                <div className='registerLabel'>
+                  <label htmlFor="experience"> Experience Level: </label>
+                </div>
+                <div className= 'inputField'>
+                  <select
+                    onChange = {this.onExperienceLevelChange}>
+                    <option value="none">--</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                    <option value="elite">Elite</option>
+                  </select>
+                </div>
+                  <br />
                 <button className= 'modalButton'
                   onClick ={this.onSearch}>
                    Find a Partner!
